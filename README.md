@@ -1,4 +1,6 @@
 # Andrew Lai
+**Slightly modified to run on an AWS Ubuntu Deep Learning AMI trained on an NVidia V100 16GB GPU, rather than my laptop's i7-5600u CPU; now reaches 100% accuracy on the training set, up to 96% accuracy on the validation split.
+
 Implementation of a TensorFlow convolutional neural network to classify images of 10 different types of clothing.
 
 As listed in prediction.py, here are the parameters:
@@ -33,6 +35,8 @@ validation_size = .16 // this causes a lot of variation due to the changing vali
 num_iterations = 5000 // this also causes a lot of variation in terms of training accuracy
 
 # notes
-Due to the validation split used (16%), the model will give a slightly different prediction every time. I tended to stick to 4 epochs for testing, which gave consistent accuracies of around 75%-85%, but the numbers predicted by the model itself were different every time due to the low number of iterations.
+~~Due to the validation split used (16%), the model will give a slightly different prediction every time. I tended to stick to 4 epochs for testing, which gave consistent accuracies of around 75%-85%, but the numbers predicted by the model itself were different every time due to the low number of iterations.
+
+With the updated number of iterations/epochs, model now gives 100% accuracy on the training set and averages 90% on the validation split, with an upper limit of 96%.
 
 Uses https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/02_Convolutional_Neural_Network.ipynb and https://github.com/rdcolema/tensorflow-image-classification as bases.
