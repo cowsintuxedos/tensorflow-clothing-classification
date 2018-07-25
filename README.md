@@ -32,7 +32,9 @@ batch_size = 32
 
 validation_size = .16 // this causes a lot of variation due to the changing validation splits
 
-num_iterations = 5000 // this also causes a lot of variation in terms of training accuracy
+~~num_iterations = 5000
+
+num_iterations = 58000
 
 # notes
 ~~Due to the validation split used (16%), the model will give a slightly different prediction every time. I tended to stick to 4 epochs for testing, which gave consistent accuracies of around 75%-85%, but the numbers predicted by the model itself were different every time due to the low number of iterations.
