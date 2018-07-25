@@ -510,8 +510,8 @@ def print_validation_accuracy(show_example_errors=False,
     print(msg.format(acc, correct_sum, num_test))
 
 optimize(num_iterations=5000)
-#optimize(num_iterations=3000)
-#optimize(num_iterations=50000)
+optimize(num_iterations=3000)
+optimize(num_iterations=50000)
 #optimize(num_iterations=50000)
 #print_validation_accuracy()
 
