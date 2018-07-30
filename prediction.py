@@ -4,7 +4,6 @@ from __future__ import print_function
 
 # Starter code from CS 165B HW4
 # Andrew Lai
-"""
 
 ''' 
 data format:
