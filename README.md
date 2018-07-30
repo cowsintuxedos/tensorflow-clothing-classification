@@ -3,6 +3,8 @@
 
 Implementation of a TensorFlow convolutional neural network to classify images of 10 different types of clothing.
 
+Usage: just run prediction.py using python
+
 As listed in prediction.py, here are the parameters:
 
 # convolutional layer parameters
